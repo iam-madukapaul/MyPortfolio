@@ -17,10 +17,6 @@ db.sqlite3
 # Pipenv
 Pipfile.lock
 
-# Virtual environment
-venv/
-.env/  # if your virtualenv is named `.env`
-
 # VSCode / PyCharm / IDEs
 .vscode/
 .idea/
