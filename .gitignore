@@ -1,0 +1,32 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff
+*.log
+db.sqlite3
+/media/
+/static/
+/staticfiles/
+
+# Environment variables
+.env
+.env.*
+
+# Pipenv
+Pipfile.lock
+
+# Virtual environment
+venv/
+.env/  # if your virtualenv is named `.env`
+
+# VSCode / PyCharm / IDEs
+.vscode/
+.idea/
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+

@@ -1,0 +1,401 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>DevPaulo</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">DevPaulo</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{% static 'assets/img/portfolioPic.png' %}" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Maduka Paul</h2>
+        <p><span class="typed" data-typed-items="Backend Developer, Software Engineer, Web Developer, API Developer"></span></p>
+      <span class="mt-4"> <a href="#"><button type="button" class="btn btn-outline-light"><i class="bi bi-github"></i>View my GitHub</button></a>
+        <a href="#"><button type="button" class="btn btn-outline-light">Contact me</button></a></span>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" style="background-color: #f5f5f5;" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                Hi, I’m Maduka Paul, a passionate Backend Developer focused on Python and Django.
+              </p>
+              <p>
+                I’ve been coding for over 2 years, beginning my journey in 2023. My first project was
+                a dynamic Blog App that handles user authentication, full CRUD operations, comments, likes, etc. (~mid-2023).
+                Since then, I’ve built a variety of applications, including an e-commerce platform, digital asset management app,
+                real-time chat application, restaurant API, recipe API, and more. Each project has helped me refine my skills in backend
+                development, APIs, databases, and server-side logic, with a focus on building efficient and scalable applications.
+              </p>
+              <span class="mt-2 d-block"><a href="#"><button type="button" class="btn btn-outline-dark">My Resume</button></a></span>
+              <!-- <p>
+                I am proficient with a wide array of technologies that complement Django, including Django REST Framework (DRF),
+                PostgreSQL, Nginx, Docker, Celery, AWS, and more. I am driven by solving problems, whether that’s improving system performance,
+                building new features, or integrating third-party services. I believe in writing clean, well-documented code and following best
+                practices to ensure the long-term success of the projects I work on. I’m also passionate about staying up-to-date with emerging
+                technologies and continuously improving my skills.
+              </p> -->
+            </div>
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>PYTHON</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>DJANGO & DJANGO REST FRAMEWORK (DRF)</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>GIT & GITHUB</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>POSTGRESQL</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>DOCKER</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>NGINX</span> <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>HTML/CSS/JAVASCRIPT</span> <i class="val">60%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Tech & tools Section -->
+    <section id="tools" class="about section bg-light py-5">
+      <div class="container" data-aos="fade-up">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Technologies & Tools</h2>
+          <div class="row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 justify-content-center">
+            <!-- Each icon -->
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/django.png' %}" alt="Django" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">Django</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/aws.png' %}" alt="AWS" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">AWS</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/docker.png' %}" alt="Docker" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">Docker</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/drf.jpg' %}" alt="DRF" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">DRF</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/git.png' %}" alt="Git" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">Git</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/github.png' %}" alt="GitHub" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">GitHub</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/insomnia.jpg' %}" alt="Insonmia" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">Insonmia</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/mysql.png' %}" alt="MySQL" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">MySQL</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/nginx.png' %}" alt="NGINX" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">NGINX</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/postgresql.jpg' %}" alt="PostgreSQL" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">PostgreSQL</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/swagger.png' %}" alt="Swagger" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">Swagger</p>
+            </div>
+            <div class="col text-center">
+              <img src="{% static 'assets/img/tools/google.png' %}" alt="Google" class="img-fluid" style="height: 40px;">
+              <p class="mt-2">Google</p>
+            </div>
+          </div>
+        </div><!-- End Section Title -->
+
+
+      </div>
+    </section><!-- /Tech & tools Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Recent Projects</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src="{% static 'assets/img/portfolio/restaurant.png' %}" class="img-fluid" alt="">
+            <span class="mt-2 d-block"><a href="#"><button type="button" class="btn btn-outline-dark">View Project</button></a></span>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src="{% static 'assets/img/portfolio/recipe.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <a href="{% static 'assets/img/portfolio/recipe.png' %}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <img src="{% static 'assets/img/portfolio/gracens.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Books 1</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <a href="{% static 'assets/img/portfolio/gracens.png' %}" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+        </div><!-- End Portfolio Container -->
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>I'd Love To Hear From You</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>info@example.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer bg-dark">
+    <div class="container text-white">
+      <div class="copyright text-center">
+        <p><span>Copyright</span> © 2025 <strong class="px-1 sitename">Maduka Paul</strong></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
