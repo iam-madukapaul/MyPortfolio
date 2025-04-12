@@ -5,6 +5,10 @@ from django.db import models
 class AboutMe(models.Model):
     description = models.TextField()
 
+    class Meta:
+        verbose_name = 'About me'
+        verbose_name_plural = 'About me'
+
     def __str__(self):
         return 'Description about me'
 
@@ -22,6 +26,10 @@ class Skill(models.Model):
 class TechTools(models.Model):
     name = models.CharField(max_length=100)
     img = models.ImageField(upload_to='img')
+
+    class Meta:
+        verbose_name = 'Tech tool'
+        verbose_name_plural = 'Tech tools'
 
     def __str__(self):
         return self.name
@@ -45,6 +53,9 @@ class Contact(models.Model):
     my_address = models.CharField(max_length=255)
     my_phone = models.CharField(max_length=20)
     my_email = models.EmailField()
+
+    class Meta:
+        verbose_name = 'Contact'
 
     def __str__(self):
         return "Personal contact info"
